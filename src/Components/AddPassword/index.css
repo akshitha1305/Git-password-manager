@@ -1,0 +1,110 @@
+.container-1 {
+  background-color: #5763a5;
+  padding: 20px;
+  border-style: none;
+  border-radius: 7px;
+  font-family: 'Roboto';
+  margin-bottom: 15px;
+}
+.password-manager-img {
+  width: 300px;
+}
+.add-new-password {
+  background-color: #454f84;
+  padding: 12px;
+  border-style: none;
+  border-radius: 7px;
+}
+.add-pass-heading {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.website-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+.website {
+  width: 50px;
+  background-color: #f8fafc;
+  padding: 12px;
+  border-right: #94a3b8 solid 2px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.website-input {
+  background-color: #f8fafc;
+  padding: 12px;
+  border-style: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 14px;
+  width: 80%;
+  outline: none;
+}
+.add-butt-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.add-button {
+  background-color: #0b69ff;
+  border-radius: 5px;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-style: none;
+  font-size: 20px;
+  outline: pointer;
+}
+.before-horizontal-line {
+  display: flex;
+  justify-content: space-between;
+}
+.search-input {
+  background-color: #f8fafc;
+  border-style: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 10px;
+  width: 100px;
+  padding: 4px;
+  outline: none;
+}
+.para {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.search {
+  width: 40px;
+  height: 40px;
+  background-color: #f8fafc;
+  padding: 4px;
+  border-right: #94a3b8 solid 2px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.count {
+  border-width: 5px;
+  padding-right: 4px;
+  padding-left: 4px;
+  border-radius: 10px;
+  border-color: #ffffff;
+}
+.checkbox-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.checkbox {
+  width: 17px;
+  margin-right: 7px;
+}
+.labelText {
+  color: #ffffff;
+  font-size: 15px;
+}
+.no-password-img {
+  width: 70%;
+}
