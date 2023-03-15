@@ -10,9 +10,10 @@ const YourPassword = props => {
     <img
       src="https://assets.ccbp.in/frontend/react-js/password-manager-stars-img.png"
       alt="stars"
+      className="imgstars"
     />
   )
-  const logo = websiteName[0]
+  const logo = websiteName[0].toUpperCase()
 
   const onClickDelete = () => {
     onDeleteItem(id)
@@ -27,7 +28,12 @@ const YourPassword = props => {
         {passwordItem}
       </div>
       <div className="button-cont">
-        <button type="button" className="delete-button" onClick={onClickDelete}>
+        <button
+          type="button"
+          data-testid="delete"
+          className="delete-button"
+          onClick={onClickDelete}
+        >
           <img
             src="https://assets.ccbp.in/frontend/react-js/password-manager-delete-img.png"
             alt="delete"

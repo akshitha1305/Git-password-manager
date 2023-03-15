@@ -85,7 +85,7 @@ class AddPassword extends Component {
             className="password-manager-img"
             src="https://assets.ccbp.in/frontend/react-js/password-manager-sm-img.png"
           />
-          <form className="add-new-password" onClick={this.onClickAddButton}>
+          <form className="add-new-password" onSubmit={this.onClickAddButton}>
             <h1 className="add-pass-heading">Add New Password</h1>
             <div className="website-container">
               <img
@@ -136,11 +136,12 @@ class AddPassword extends Component {
             </div>
           </form>
         </div>
-        <div className="container-1">
+        <div className="container-2">
           <div className="before-horizontal-line">
-            <p className="para">
-              Your Passwords <span className="count"> {updatedListLength}</span>
-            </p>
+            <div className="count-container">
+              <h1 className="para">Your Passwords</h1>
+              <p className="para count"> {updatedListLength}</p>
+            </div>
             <div className="website-container">
               <img
                 className="search"
@@ -167,7 +168,7 @@ class AddPassword extends Component {
                 type="checkbox"
               />
               <label htmlFor="checkboxId" className="labelText">
-                Show Password
+                Show Passwords
               </label>
             </div>
             {updatedListLength === 0 ? (
@@ -177,9 +178,10 @@ class AddPassword extends Component {
                   className="no-password-img"
                   src="https://assets.ccbp.in/frontend/react-js/no-passwords-img.png"
                 />
+                <p className="uorder-list-para">No Passwords</p>
               </>
             ) : (
-              <ul>
+              <ul className="items">
                 {updatedList.map(each => (
                   <YourPasswords
                     onDeleteItem={this.onDeleteItem}
